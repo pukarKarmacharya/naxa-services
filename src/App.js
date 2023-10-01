@@ -3,7 +3,7 @@ import './App.css';
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/home";
 import {useRef,useEffect} from "react";
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {getServicesFetch} from './redux/actions/actions'
 
 function App() {

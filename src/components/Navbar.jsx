@@ -1,10 +1,7 @@
 import React from "react";
-/* import {useRef} from "react"; */
 import {useSelector} from 'react-redux';
-/* import {getServicesFetch} from '../redux/actions/actions' */
 
 export const Navbar = ({objref}) => {
-  /* const dispatch = useDispatch(); */
   const services = useSelector(state => state.myReducer.services);
   
   const scrollToSection = (elementRef) => {

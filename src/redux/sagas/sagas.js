@@ -1,6 +1,4 @@
 import { put, call, takeEvery } from 'redux-saga/effects';
-//import { getDemo } from '../api';
-//import * as types from '../../consts/actionTypes';
 import{GET_SERVICES_SUCCESS, GET_SERVICES_FETCH} from '../actions/actions';
 
 function serviceFetch(){
