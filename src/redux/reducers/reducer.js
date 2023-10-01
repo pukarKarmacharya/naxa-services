@@ -1,4 +1,3 @@
-import * as types from '../../consts/actionTypes';
 import {GET_SERVICES_SUCCESS} from '../actions/actions'
 
 const myReducer = (state = { services:[]}, action) => {
