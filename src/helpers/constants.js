@@ -1,0 +1,1 @@
+export const API_SERVICES_URL = "https://admin.naxa.com.np/api/services";

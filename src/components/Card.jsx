@@ -44,7 +44,6 @@ const styles = {
     backgroundColor: "#fff",
     padding: "20px",
     marginTop: "20px",
-
   },
 
   leftColumn:{
@@ -62,6 +61,7 @@ const styles = {
     fontWeight: "bold",
     marginBottom: "5px",
   },
+  
   descriptionStyle: {
     color: "#333",
     fontSize: "16px",

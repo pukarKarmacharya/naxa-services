@@ -7,7 +7,7 @@ export const Home = ({objref}) => {
   return (
     <div>
       {services.map((card,index) => (
-        <div>
+        <div key={card.id}>
           <Card
             key={card.id}
             image={card?.photo}

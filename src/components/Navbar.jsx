@@ -16,8 +16,10 @@ export const Navbar = ({objref}) => {
         <nav style={styles.navbarStyle}>
           <ul style={styles.navbarRightStyle}>
             {services.map((service,index) => (
-              <li style={styles.navbarItemStyle} onClick={() => scrollToSection(objref[index])}>
+              <li style={styles.navbarItemStyle} onClick={() => scrollToSection(objref[index])} key={index}>
+
                 <div>
+
                   {service.title}
                 </div>
               </li>

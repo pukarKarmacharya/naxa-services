@@ -1,8 +1,10 @@
 import { put, call, takeEvery } from 'redux-saga/effects';
 import{GET_SERVICES_SUCCESS, GET_SERVICES_FETCH} from '../actions/actions';
+import { API_SERVICES_URL } from '../../helpers/constants';
+
 
 function serviceFetch(){
-	return fetch('https://admin.naxa.com.np/api/services').then(response => response.json())
+	return fetch(API_SERVICES_URL).then(response => response.json())
 }
 
 function* workGetServicesFetch(){

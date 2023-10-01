@@ -2,26 +2,25 @@
 import './App.css';
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/home";
-import {useRef,useEffect} from "react";
+import React, {useEffect} from "react";
 import {useDispatch} from 'react-redux';
 import {getServicesFetch} from './redux/actions/actions'
+import {useSelector} from 'react-redux';
 
 function App() {
   const dispatch = useDispatch();
 
-  const section1 = useRef(null);
-  const section2 = useRef(null);
-  const section3 = useRef(null);
-  const section4 = useRef(null);
-  const section5 = useRef(null);
-  const section6 = useRef(null);
-  const section7 = useRef(null);
-  
-  const objref = {0:section1,1:section2,2:section3,3:section4,4:section5,5:section6,6:section7};
+  const objref = {};
 
   useEffect(() =>{
     dispatch(getServicesFetch());
-  },[])
+  })
+
+  const services = useSelector(state => state.myReducer.services);
+ 
+  services.forEach((service , index) =>{
+    objref[index] = React.createRef()
+  })
 
   return (
     <div className="App">
